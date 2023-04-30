@@ -1,0 +1,39 @@
+{
+  "name": "node-authentication",
+  "version": "1.0.0",
+  "description": "Utility for therapists to maximize their time with their client's.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "ehcodes",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "*",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^5.2.3",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "ejs": "~2.5.2",
+    "ejs-lint": "^2.0.0",
+    "express": "^4.18.2",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.20",
+    "method-override": "~2.3.6",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.12.1",
+    "morgan": "^1.9.1",
+    "mpath": ">=0.5.1",
+    "multer": "^1.3.0",
+    "passport": "~0.3.2",
+    "passport-facebook": "~2.1.1",
+    "passport-google-oauth": "~1.0.0",
+    "passport-local": "~1.0.0",
+    "passport-twitter": "^0.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

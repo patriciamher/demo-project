@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PrivateWE</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <header>
+      <span id="page-title">Create your Account</span>
+      <nav>
+        <ul>
+          <li>
+            <a class="navItem" href="/" title="return to landing page">privateWE</a></h3>
+          </li>
+          <li>
+            <a class="navItem" href="/login" title="log in">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <section class="container">
+      <section class="col-sm-6 col-sm-offset-3">
+        <!-- LOGIN FORM -->
+        <form action="/signup" method="post">
+          <section class="formGroup">
+            <label id="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstName">
+            <label id="form-label">Last Name</label>
+            <input type="text" class="form-control" name="lastName">
+            <label id="form-label">Username</label>
+            <input type="text" class="form-control" name="email">
+            <label id="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+          </section>
+          <section class="formGroup">
+            <label id="form-label" for="therapist">Therapist</label>
+            <input id="therapist" type="radio" name="role" value="therapist">
+            <label id="form-label" for="client">Client</label>
+            <input id="client" type="radio" name="role" value="client" checked>
+          </section>
+          <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+        </form>
+
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <p>Or go <a href="/">home</a>.</p>
+
+      </section>
+    </section>
+  </body>
+</html>

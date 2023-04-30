@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  background: white;
+  font-family: 'Rubik', sans-serif;
+  color: #000;
+}
+
+header {
+	background-color: #86F1C4;
+	padding: 1rem;
+	height: 3rem;
+	border-bottom: 1px solid #86F1C4;
+  width: 100%;
+  display: inline-block;
+}
+
+nav{
+  float: right;
+}
+
+section{
+  margin-top:1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+li, ul {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+
+h1 {
+  color: #379D1D;
+  font-size: 8rem;
+  font-family: 'Rubik', sans-serif;
+}
+h2,h3,h4,h5,h6{
+  color: #000;
+}
+
+html {
+  font-size: 20px;
+}
+
+input {
+  text-align: center;
+}
+
+textarea, button{
+  margin: 2%;
+  resize: none;
+}
+
+form{
+  color: #379D1D;
+}
+
+/*==============================================================================
+===============================CLASSES =========================================
+================================================================================*/
+
+.container {
+  display: inline-block;
+  text-align: center;
+  margin-top: 2.2rem;
+  margin-left: 5.5rem;
+}
+
+.page-title{
+  margin: 1rem;
+  font-family: 'Rubik', sans-serif;
+  color: #4F7F6B!important;
+  font-size: .8rem;
+}
+
+.navItem {
+	margin: 1rem;
+	font-family: 'Rubik', sans-serif;
+  color: #4F7F6B;
+	font-size: .8rem;
+	text-decoration: none;
+}
+
+.navItem:hover {
+	margin-bottom: 17px;
+	border-bottom: 3px solid #4F7F6B;
+  color: #4F7F6B;
+  text-decoration: none;
+	-webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.logout {
+  margin: 20px
+}
+
+.btn{
+  background-color: #86F1C4;
+  color: #4F7F6B;
+  margin: 1%;
+}
+
+.btn:Hover{
+  background-color: #4F7F6B;
+  color: #86F1C4;
+}
+
+.entrySection{
+  width: 80%;
+  margin: auto;
+}
+
+.journalContainer{
+  border: 3.5px double #4F7F6B;
+  width: 95%;
+  height: 21rem;
+  margin: auto;
+  overflow: auto;
+}
+
+.journals{
+  border: 1px dashed #86F1C4;
+  width: 95%;
+  height: 14rem;
+  margin: 2%;
+  overflow: auto;
+  text-align: left;
+}
+
+.journalsHeader{
+  width: 90%;
+  margin-left: 1rem;
+}
+
+#container{
+  margin-top: 5.5rem;
+}
+
+#page-title {
+  float: left;
+  font-size: 1rem;
+  color: #379D1D;
+}
+#entry-owner-name{
+  float: left;
+}
+
+#postDate{
+  float: right;
+}
+
+#entries{
+  float: left;
+}
+#form-label{
+  text-align: left;
+  display: inline-block;
+}

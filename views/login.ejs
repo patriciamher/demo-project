@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>PrivateWE</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <header>
+    <span><a class="page-title" href="/" title="return to landing page">privateWE</a></span>
+    <nav>
+      <ul>
+        <li>
+          <a class="navItem" href="/logout" title="log out">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <section class="col-sm-6 col-sm-offset-3">
+      <h2>Login</h2>
+      <!-- LOGIN FORM -->
+      <form action="/login" method="post">
+        <section class="form-group">
+          <label>Username</label>
+          <input type="text" class="form-control" name="email">
+        </section>
+        <section class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" name="password">
+        </section>
+        <button type="submit" class="btn btn-warning btn-lg">Login</button>
+      </form>
+      <section>
+        <p>Need an account? <a href="/signup">Signup</a></p>
+        <p>Or go <a href="/">home</a>.</p>
+      </section>
+    </section>
+  </section>
+</body>
+
+</html>

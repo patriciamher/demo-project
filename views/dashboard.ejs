@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>PrivateWE</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- NAV BAR -->
+    <header>
+      <span id="page-title">Welcome, <%= user.firstName %> ! </span>
+      <nav>
+        <ul>
+          <li>
+            <a class="navItem" href="/" title="return to landing page">privateWE</a></h3>
+          </li>
+          <li>
+            <a class="navItem" href="/logout" title="log out">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Client View -->
+
+
+    <!-- <div class="container">
+      <button class="form-control">View Notes</button>
+    </div> -->
+
+
+    <% if (user.role === "client") { %>
+      <section class="client-profile container" >
+        <section class="entrySection">
+          <form class="clientForm" action="/journalEntries" method="POST">
+            <label>Create Journal Entry</label>
+            <textarea class="form-control" name="journal" rows="15" cols="60" maxlength="6000" wrap="hard" autocomplete="off" spellcheck="true"></textarea>
+            <button  class="btn btn-default  form-control" type="submit" name="button">Submit Journal Entry</button>
+          </form>
+        </section>
+      </section>
+      <% } %>
+
+      <!-- Therapist View -->
+    
+      <% if (user.role === "therapist") { %>
+        <section class="therapist-profile  container">
+          <section class="journalContainer">
+            <% for(let i= entries.length-1; i>=0;i--) {%>
+              <section class="journalsHeader">
+                <p id="entry-owner-name"><span class="name"><%= entries[i].firstName %></span>
+                <span class="name"><%= entries[i].lastName %></span></p>
+                <p id="postDate"><span><%= entries[i].entryDate %></span></p>
+              </section>
+              <section class="journals">
+                <p id="entries"><%= entries[i].journal %></p>
+              </section>
+            <% } %>
+          </section>
+        </section>
+      <% } %>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>
