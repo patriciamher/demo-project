@@ -12,10 +12,10 @@ body {
 }
 
 header {
-	background-color: #86F1C4;
+	background-color: #86a3f1;
 	padding: 1rem;
 	height: 3rem;
-	border-bottom: 1px solid #86F1C4;
+	border-bottom: 1px solid #223260;
   width: 100%;
   display: inline-block;
 }
@@ -39,8 +39,8 @@ li, ul {
 }
 
 h1 {
-  color: #379D1D;
-  font-size: 8rem;
+  color: #223260;
+  font-size: 6rem;
   font-family: 'Rubik', sans-serif;
 }
 h2,h3,h4,h5,h6{
@@ -61,7 +61,7 @@ textarea, button{
 }
 
 form{
-  color: #379D1D;
+  color: #223260;
 }
 
 /*==============================================================================
@@ -78,22 +78,22 @@ form{
 .page-title{
   margin: 1rem;
   font-family: 'Rubik', sans-serif;
-  color: #4F7F6B!important;
+  color: #223260 !important;
   font-size: .8rem;
 }
 
 .navItem {
 	margin: 1rem;
 	font-family: 'Rubik', sans-serif;
-  color: #4F7F6B;
+  color: #223260;
 	font-size: .8rem;
 	text-decoration: none;
 }
 
 .navItem:hover {
 	margin-bottom: 17px;
-	border-bottom: 3px solid #4F7F6B;
-  color: #4F7F6B;
+	border-bottom: 3px solid #223260;
+  color: #223260;
   text-decoration: none;
 	-webkit-transition: all .15s ease-in-out;
   -moz-transition: all .15s ease-in-out;
@@ -107,15 +107,14 @@ form{
 }
 
 .btn{
-  background-color: #86F1C4;
-  color: #4F7F6B;
+  background-color: #223260;
+  color: #86a3f1;
   margin: 1%;
 }
-
-.btn:Hover{
-  background-color: #4F7F6B;
-  color: #86F1C4;
-}
+  .btn:Hover{
+    color: #223260;
+    box-shadow: 10px 10px 10px #86a3f1;
+  }
 
 .entrySection{
   width: 80%;
@@ -123,7 +122,7 @@ form{
 }
 
 .journalContainer{
-  border: 3.5px double #4F7F6B;
+  border: 3.5px double #223260;
   width: 95%;
   height: 21rem;
   margin: auto;
@@ -142,7 +141,7 @@ form{
 .journalsHeader{
   width: 90%;
   margin-left: 1rem;
-}
+} 
 
 #container{
   margin-top: 5.5rem;
@@ -151,7 +150,7 @@ form{
 #page-title {
   float: left;
   font-size: 1rem;
-  color: #379D1D;
+  color: #223260;
 }
 #entry-owner-name{
   float: left;

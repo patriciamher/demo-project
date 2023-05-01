@@ -25,7 +25,8 @@ module.exports = function(app, passport, db) {
 
   //render signup ============================================
   app.get('/signup', function(req, res) {
-    res.render('signup.ejs');
+    var user = req.user
+    res.render('signup.ejs', { user: user});
   });
   
   //proceess signup
@@ -37,9 +38,9 @@ module.exports = function(app, passport, db) {
 
   //render DASHBOARD ==========================================
   app.get('/dashboard', isLoggedIn, function(req, res) {
-    console.log(user.role)
+  
     const user = req.user
-    const role = req.user.role
+    console.log(user)
     db.collection('journalEntries').find().toArray((err, result) => {
       if (err) return console.log(err);
       console.log(result)

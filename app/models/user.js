@@ -12,7 +12,8 @@ var userSchema = mongoose.Schema({
         password     : String,
         firstName    : String,
         lastName     : String,
-        role         : String
+        client       : Boolean,
+        therapist    : Boolean
     },
 });
 
